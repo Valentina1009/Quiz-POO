@@ -1,0 +1,43 @@
+print("Bienvenido\n")
+print("Operaciones aritmeticas:\n")
+menudeopciones= """
+1.Suma
+2.Resta
+3.Multiplicación
+4.División
+"""
+print(menudeopciones)
+seleccion = int(input("Seleccione una operación\n"))
+decimales = int(input("Indique el número de decimales que desea en el resultado\n"))
+
+if seleccion==1:
+    operando1 = float(input("Ingrese el operando uno\n"))
+    operando2 = float(input("Ingrese el operando dos\n"))
+    resultado = operando1+operando2
+    print(f"{operando1}+{operando2}={resultado}")
+
+elif seleccion==2:
+    operando1 = float(input("Ingrese el operando uno\n"))
+    operando2 = float(input("Ingrese el operando dos\n"))
+    resultado = operando1-operando2
+    print(f"{operando1}-{operando2}={resultado}")
+
+elif seleccion==3:
+    operando1 = float(input("Ingrese el operando uno\n"))
+    operando2 = float(input("Ingrese el operando dos\n"))
+    resultado = operando1*operando2
+    print(f"{operando1}x{operando2}={resultado}")
+
+elif seleccion==4:
+   operando1 = float(input("Ingrese el operando uno\n"))
+   operando2 = float(input("Ingrese el operando dos\n"))
+   resultado = operando1/operando2
+   print(f"{operando1}/{operando2}={resultado}")
+else:
+   print("La operación que usted seleccionó no existe.\n")
+
+
+
+
+
+
